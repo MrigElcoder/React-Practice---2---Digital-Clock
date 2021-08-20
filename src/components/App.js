@@ -1,8 +1,7 @@
 import React, {Component, useState} from "react";
 import '../styles/App.css';
 
-class App extends Component {
-    render() {
+const App=()=>{
      let time=new Date().toLocaleTimeString();
         const [ctime,setctime]=useState(time);
         const UpdateTime=()=>{
@@ -14,9 +13,6 @@ class App extends Component {
             <>
                <h1>{ctime}</h1>
             </>
-        )
-    }
-}
-
-
+        );
+    };
 export default App;
